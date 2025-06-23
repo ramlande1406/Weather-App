@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="Weather.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+
+  <div class="weather-card">
+    <h1>Weather Forecast</h1>
+    <label for="cityInput" class="visually-hidden">City Name</label>
+    <input type="text" class="weather-input" id="cityInput" placeholder="Enter city name">
+    <button class="weather-btn" id="getWeatherBtn" type="button" aria-label="Get weather for entered city">
+      Get Weather
+    </button>
+
+   
+    <div class="loader" id="loader" style="display: none;"></div>
+
+    <div class="weather-output" id="weatherResult" style="display: none;">
+      <div class="city-name" id="resultCity">City</div>
+      <div class="temperature" id="resultTemp">0</div>
+      <div class="weather-condition" id="resultCondition">
+        Weather
+        <span class="material-icons-outlined" aria-hidden="true" title="Weather icon">WB_CLOUDY</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="Weather.js"></script>
+</body>
+</html>
